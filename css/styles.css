@@ -1,0 +1,183 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: pink;
+    color: white;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin: 1em;
+}
+#elementos_posicionados{
+    padding: 3em;
+}
+#contenedor-flexible{
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-evenly;
+    background-color: blueviolet;   
+    align-items:baseline;
+    height: 100%;
+    flex-wrap: wrap;
+}
+#contenedor-flexible article{
+    background-color: blue;
+    margin: 1em;
+    border-radius: 1em;
+    font-size: 2em;
+    border: 5px solid white ;
+    padding: 2em;
+    width: 15%;
+    height: 15%;
+
+}
+.objeto-flexible-1{
+    margin-top: 2em;
+}
+.objeto-flexible-1{
+    flex-grow: 2;
+}
+
+#encabezado{
+    display: flex;
+        justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.logo{
+    width: 30%;
+}
+#titulo{
+    width: 30%;
+    text-align: center;
+}
+#navegacion{
+    width: 30%;
+}
+h1{
+    font-size: 8rem;
+}
+h2{
+    font-size: 6rem;
+}
+h3{
+    font-size: 3rem;
+    text-align: center;
+}
+p{
+    font-size: 1.8rem;
+}
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+
+}
+
+.producto img{
+    width: auto;
+    height: 15rem;
+    border-radius: 50%;
+    margin: 1em;
+}
+.producto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1rem red dotted;
+    width: 40rem;
+    min-width: 10rem;
+}
+
+/* Carrusel de tarjetas */
+.carrusel-tarjetas{
+    background-color: white;
+    padding: 35px 25px;
+}
+
+.carrusel-tarjetas h2{
+    margin: 0 0 25px 0;
+    color: #2c4d05;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.tarjetas-fila{
+    display: flex;
+    gap: 18px;
+    align-items:center;
+    justify-content: center;
+    overflow-x: scroll;
+}
+
+.flecha-carrusel{
+    background-color: #A4D119;
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    flex-shrink: 0;
+    align-self: center;
+        min-width: 20px;
+
+}
+
+.flecha-carrusel:hover{
+    background-color: #5a7a0c;
+    color: white;
+}
+
+.tarjeta{
+    flex: 1;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 25px 15px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
+    min-width: 300px;
+}
+
+.tarjeta:hover{
+    background-color: #f0f8d0;
+    border-color: #5a7a0c;
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.3);
+}
+
+.tarjeta .icono-tarjeta{
+    font-size: 3.5em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tarjeta h3{
+    font-size: 1.8em;
+    margin: 0;
+    font-weight: bold;
+}
